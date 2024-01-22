@@ -1,0 +1,59 @@
+<h1 appTitulo >NUEVO USUARIO</h1>
+
+<form [formGroup]= "userForm" (ngSubmit)="onSubmit()" class="grid formgrid">
+  <div class="col-4">
+    <mat-form-field class="w-full">
+        <mat-label>id</mat-label>
+        <input formControlName="id" matInput type="text">
+      </mat-form-field>
+</div>
+    <div class="col-4">
+        <mat-form-field class="w-full">
+            <mat-label>Nombre</mat-label>
+            <input formControlName="firstName" matInput type="text">
+          </mat-form-field>
+    </div>
+      <div class="col-4">
+          <mat-form-field class="w-full">
+            <mat-label>Apellido</mat-label>
+            <input formControlName="lastName" matInput type="text">
+          </mat-form-field>
+      </div>
+      <div class="col-4">
+          <mat-form-field class="w-full">
+            <mat-label>Edad</mat-label>
+            <input formControlName="edad" matInput type="text">
+          </mat-form-field>
+      </div>
+      <div class="col-6">
+          <mat-form-field class="w-full">
+            <mat-form-field>
+                <mat-label>Cursos</mat-label>
+                <mat-select formControlName="cursos">
+                    <mat-option value="JAVASCRIPT">JAVASCRIPT</mat-option>
+                    <mat-option value="ANGULAR">ANGULAR</mat-option>
+                    <mat-option value="REACTS">REACTS</mat-option>
+                    <mat-option value="Desarrollo web">DESARROLLO WEB</mat-option>
+                </mat-select>
+              </mat-form-field>
+          </mat-form-field>
+      </div>
+      <div class="col-6">
+          <mat-form-field class="w-full">
+            <mat-form-field>
+                <mat-label>Carrera</mat-label>
+                <mat-select formControlName="carrera">
+                    <mat-option value="Desarrollo web">Desarrollo web</mat-option>
+                    <mat-option value="JAVASCRIPT">JAVASCRIPT</mat-option>
+                    <mat-option value="REACTS">REACTS</mat-option>
+                    <mat-option value="ANGULAR">ANGULAR</mat-option>
+                    <mat-option value="FULL STACK">FULL STACK</mat-option>
+                    <mat-option value="BACKEND">BACKEND</mat-option>
+                </mat-select>
+              </mat-form-field>
+          </mat-form-field>
+      </div>
+      <div class="col-12 flex justify-content-end">
+        <button mat-flat-button class="botonera" >Agregar</button>
+      </div>
+</form>

@@ -1,0 +1,15 @@
+<form [formGroup]="alumnosForm" class="grid formgrid">
+    <div class="col-2">
+        <mat-form-field class="w-full" >
+            <mat-label>Nuevo alumno</mat-label>
+            <input formControlName="name" matInput>
+            <mat-hint> contener nombre de alumno</mat-hint>
+        </mat-form-field>
+    </div>
+    <div class="col-2">
+        <button (click)="onAddProduct" matSuffix mat-icon-button>
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+    <div class="my-5">
+        <hr />
